@@ -1,0 +1,71 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-projectblue-dev-f1829-authRole",
+      "UnauthRoleArn": "arn:aws:iam::339712775390:role/amplify-projectblue-dev-f1829-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::339712775390:role/amplify-projectblue-dev-f1829-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-projectblue-dev-f1829-deployment",
+      "UnauthRoleName": "amplify-projectblue-dev-f1829-unauthRole",
+      "StackName": "amplify-projectblue-dev-f1829",
+      "StackId": "arn:aws:cloudformation:us-east-2:339712775390:stack/amplify-projectblue-dev-f1829/84322790-2f85-11ef-963b-067e20d9c737",
+      "AmplifyAppId": "dq930wu46j8zm"
+    }
+  },
+  "api": {
+    "UserAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "UserLambda"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway",
+      "output": {
+        "ApiName": "UserAPI",
+        "RootUrl": "https://6ftdfi0psd.execute-api.us-east-2.amazonaws.com/dev",
+        "ApiId": "6ftdfi0psd"
+      },
+      "lastPushTimeStamp": "2025-06-11T23:46:50.142Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-projectblue-dev-f1829-deployment/amplify-cfn-templates/api/UserAPI-cloudformation-template.json",
+        "logicalId": "apiUserAPI"
+      }
+    }
+  },
+  "function": {
+    "UserLambda": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::339712775390:role/projectblueLambdaRole701f7725-dev",
+        "Region": "us-east-2",
+        "Arn": "arn:aws:lambda:us-east-2:339712775390:function:UserLambda-dev",
+        "Name": "UserLambda-dev",
+        "LambdaExecutionRole": "projectblueLambdaRole701f7725-dev"
+      },
+      "lastPushTimeStamp": "2025-06-11T23:46:50.162Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-projectblue-dev-f1829-deployment/amplify-cfn-templates/function/UserLambda-cloudformation-template.json",
+        "logicalId": "functionUserLambda"
+      },
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-projectblue-dev-f1829-deployment",
+        "s3Key": "amplify-builds/UserLambda-304f4970735a71637166-build.zip"
+      },
+      "lastBuildTimeStamp": "2025-06-11T20:53:32.524Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2025-06-11T20:53:36.262Z",
+      "distZipFilename": "UserLambda-304f4970735a71637166-build.zip",
+      "lastPushDirHash": "NuGD615LMrr/YvxnH0kYf+Oa0As=",
+      "lastDevBuildTimeStamp": "2025-06-11T20:43:02.664Z"
+    }
+  }
+}

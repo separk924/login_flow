@@ -1,0 +1,52 @@
+{
+  "api": {
+    "UserAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "UserLambda"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "UserLambda": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_UserLambda_authdbUri": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "UserLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_UserLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "UserLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_UserLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "UserLambda"
+        }
+      ]
+    }
+  }
+}

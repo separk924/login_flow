@@ -1,0 +1,17 @@
+{
+  "lambdaLayers": [
+    {
+      "type": "ProjectLayer",
+      "resourceName": "projectbluepackages",
+      "version": "Always choose latest version",
+      "isLatestVersionSelected": true,
+      "env": "dev"
+    }
+  ],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "authdbUri",
+      "environmentVariableName": "AUTHDB_URI"
+    }
+  ]
+}

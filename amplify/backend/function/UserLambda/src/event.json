@@ -1,0 +1,12 @@
+{
+  "httpMethod": "POST",
+  "path": "/user/login",
+  "queryStringParameters": {
+    "limit": "10"
+  },
+  "headers": {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWJiMmMxNDk2MTRhZWMzMjM1YWI2YWEiLCJ1c2VyRW1haWwiOiJzZXVuZ3AxMjNAZ21haWwuY29tIiwiaWF0IjoxNzI3MTk0Mjc4fQ.qULzz5Y18Nzq7mgeTD1vXm9puUxO0uEgFAXh9mgySiU"
+  },
+  "body": "{\"email\": \"seungp123@gmail.com\",\"password\": \"Muffins135!\"}"
+}
